@@ -1,0 +1,5 @@
+- hosts: localhost
+  gather_facts: no
+  tasks:
+  - name: hello
+    debug: msg="{{ice_debug}}"

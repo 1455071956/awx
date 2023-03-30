@@ -1,0 +1,8 @@
+- hosts: localhost
+  gather_facts: no
+  remote_user: adminop
+  become: yes
+  become_user: root
+  tasks:
+    - name: 拷贝tomcat启动脚本_1
+      template: src=wei.j2 dest=/root/wei123.txt owner=root group=root mode=0755 backup=yes

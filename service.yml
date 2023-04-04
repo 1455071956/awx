@@ -1,6 +1,5 @@
 - hosts: localhost
   gather_facts: no
-  remote_user: root
   tasks:
   - name: 安装组件
-    shell: "yum install {{service}}"
+    shell: "echo 123"
